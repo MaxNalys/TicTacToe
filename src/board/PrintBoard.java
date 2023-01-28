@@ -7,8 +7,6 @@ public class PrintBoard {
     public static final String CYAN_BOLD_BRIGHT = "\033[1;96m";  // CYAN
     public static final String YELLOW_BOLD_BRIGHT = "\033[1;93m";// YELLOW
 
-
-
     public static void printBoard(Board board) {
         for (int i = 0; i < Board.BOARD_SIZE; i++) {
             if(i==3||i==6){
@@ -23,7 +21,6 @@ public class PrintBoard {
                     System.out.print("\t" + (YELLOW_BOLD_BRIGHT+board.getMarkFromBoard(i).toString()));
                 }
             }
-
         }
     }
 }

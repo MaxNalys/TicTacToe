@@ -1,9 +1,6 @@
 import board.Board;
 import board.PrintBoard;
-import mark.MarkIdentifier;
 import player.Player;
-
-import java.io.BufferedReader;
 import java.util.Scanner;
 
 
@@ -52,7 +49,6 @@ public class TicTacToe {
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Wrong number\n");
         }
-
     }
 
     public boolean isWin() {
@@ -76,6 +72,4 @@ public class TicTacToe {
         }
         return false;
     }
-
-
 }
